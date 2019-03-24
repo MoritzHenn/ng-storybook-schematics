@@ -1,7 +1,7 @@
 {
   "name": "ng-storybook-schematics",
   "version": "0.1.0",
-  "description": "A collection of schematics to use with @storybook/angular",
+  "description": "A schematic to quickly create stories for @storybook/angular",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js"

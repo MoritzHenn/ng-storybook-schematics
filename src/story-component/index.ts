@@ -114,7 +114,7 @@ function updateStoryComponent(options: any): Rule {
 	return (tree: Tree, _context: SchematicContext) => {
 		const baseFilePath = normalize(options.storyPath + (options.flat ? '' : '/' + options.storyName) + `/${options.storyName}.component`);
 		const sourceComponent = tree.read(baseFilePath + '.ts');
-		console.log(baseFilePath);
+		
 		if (!sourceComponent) throw new SchematicsException(`Could not find a ${options.storyName}.component.ts.`);
 
 		let sourceComponentContent = sourceComponent.toString();
