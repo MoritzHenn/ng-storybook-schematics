@@ -1,0 +1,27 @@
+{
+  "name": "ng-storybook-schematics",
+  "version": "0.1.0",
+  "description": "A collection of schematics to use with @storybook/angular",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && jasmine src/**/*_spec.js"
+  },
+  "keywords": [
+    "schematics",
+    "storybook"
+  ],
+  "author": "Moritz Henneberger",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^7.3.6",
+    "@angular-devkit/schematics": "^7.3.6",
+    "@schematics/angular": "^7.3.6",
+    "@types/jasmine": "^3.0.0",
+    "@types/lodash": "^4.14.123",
+    "@types/node": "^8.0.31",
+    "jasmine": "^3.0.0",
+    "lodash": "^4.17.11",
+    "typescript": "~3.2.2"
+  }
+}

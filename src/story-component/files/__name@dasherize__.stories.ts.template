@@ -1,0 +1,18 @@
+import { storiesOf } from '@storybook/angular';
+<% if(isStoryActionNeeded) { %>
+import { action } from '@storybook/addon-actions';
+<% } %>import { <%= classify(storyName) %>Component } from './<% if(!flat) { %><%= dasherize(storyName) %>/<% } %><%= dasherize(storyName) %>.component';
+
+const defaultProps = {
+<%= insertDefaultProps() %>
+};
+
+storiesOf('<%= dasherize(name) %>', module)
+  .add('story name 1', () => ({
+    component: <%= classify(storyName) %>Component,
+    props: {...defaultProps}
+  }))
+  .add('story name 2', () => ({
+    component: <%= classify(storyName) %>Component,
+    props: {...defaultProps}
+  }));

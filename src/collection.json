@@ -1,0 +1,13 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "story-component": {
+      "description": "Create a story component",
+      "factory": "./story-component",
+      "aliases": [
+        "story"
+      ],
+      "schema": "./story-component/schema.json"
+    }
+  }
+}
